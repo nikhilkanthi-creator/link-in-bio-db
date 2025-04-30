@@ -1,8 +1,11 @@
 <h1>Nikhil Kanthi</h1>
 
+<img class="avatar-image" src="/Instagram Prof Pic.jpg">
+
 <% @list_of_links.each do | the_item | %>
-<div>
-  <a href="<%= the_item.link_url %>">
+<div class = "item">
+
+  <a class = "link-text" target = "_blank" href="<%= the_item.link_url %>">
   <%= the_item.link_description %>
   </a>
 </div>

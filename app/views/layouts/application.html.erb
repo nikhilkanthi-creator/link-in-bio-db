@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Link-in-bio</title>
+    <title>Nikhil Kanthi</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <style>
+      html{
+        min-height: 100%;
+      }
+      .main-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 640px;
+        margin: auto;
+      }
+      .child {
+        width: 700px;
+        padding: 20px;
+        background-color: rgba(161, 154, 199, 0.5);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 4px 4px 10px 0px rgba(122,32,122,.5);
+      }
+
+      body {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: radial-gradient(circle at 20% 0%, #ff8b17, #e6751f, #cc6021, #b24d22, #963b1f, #7b2b1c, #601d16, #45100e);
+        color: rgba(255, 255, 255, 1.0);
+        font-family: "Georgia";
+        font-size: 17px;
+        font-weight: 700;
+      }
+      a {
+        color: rgba(255, 255, 255, 1.0);
+        text-decoration: none;
+      }
+      .avatar-image{
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+      .link-text{
+        text-align:center;
+        flex-grow: 1;
+      }
+    </style>
+
+
   </head>
 
   <body>
