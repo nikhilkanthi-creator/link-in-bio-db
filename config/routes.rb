@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   # get "/your_first_screen" => "pages#first"
   
+  get("/", { :controller => "linkinbio", :action => "homepage"})
+  
 end
